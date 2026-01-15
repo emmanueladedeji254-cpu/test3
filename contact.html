@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us - Honeyland Schools</title>
+</head>
+<body>
+        <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="https://copilot.microsoft.com/th/id/BCO.bb05288b-3c17-4d2e-bdc4-60b40ced62fe.png" alt="">
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--web social links-->
+    <div class="web">
+        <a href="https://share.google/fXFkWilXjfIkyFt2y"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        <a href="https://www.instagram.com/honeylandschool?igsh=MWV6azV6NXJqem5kcA=="><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        <a href="https://wa.me/2349029820762"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+        <a href="https://www.youtube.com/@honeylandschools8290"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+        <a href="https://honeylandschools.ng/socialmedia/join-us-on-twitter"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+    </div>
+
+    <!-- Contact Header -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with Honeyland Schools. We'd love to hear from you!</p>
+            <button class="register-popup-btn" id="openRegisterBtn">Register Now</button>
+        </div>
+    </section>
+
+    <!-- Registration Popup Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Student Registration</h2>
+                <span class="close-btn" id="closeRegisterBtn">&times;</span>
+            </div>
+
+            <form class="register-form" id="registerForm">
+                <div class="form-section">
+                    <h3>Student Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="studentName">Student Full Name *</label>
+                        <input type="text" id="studentName" name="studentName" required placeholder="Enter student's full name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth *</label>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gradeLevel">Desired Grade Level *</label>
+                            <select id="gradeLevel" name="gradeLevel" required>
+                                <option value="">Select Grade</option>
+                                <option value="montessori">Montessori (Age 2-5)</option>
+                                <option value="primary1">Primary 1</option>
+                                <option value="primary2">Primary 2</option>
+                                <option value="primary3">Primary 3</option>
+                                <option value="primary4">Primary 4</option>
+                                <option value="primary5">Primary 5</option>
+                                <option value="primary6">Primary 6</option>
+                                <option value="secondary1">Secondary 1</option>
+                                <option value="secondary2">Secondary 2</option>
+                                <option value="secondary3">Secondary 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentEmail">Student Email</label>
+                        <input type="email" id="studentEmail" name="studentEmail" placeholder="student@email.com">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Parent/Guardian Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name *</label>
+                        <input type="text" id="parentName" name="parentName" required placeholder="Enter parent/guardian name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parentEmail">Parent Email *</label>
+                            <input type="email" id="parentEmail" name="parentEmail" required placeholder="parent@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="parentPhone">Parent Phone *</label>
+                            <input type="tel" id="parentPhone" name="parentPhone" required placeholder="+234 XXX XXX XXXX">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="schoolBranch">Preferred School Branch *</label>
+                        <select id="schoolBranch" name="schoolBranch" required>
+                            <option value="">Select Campus</option>
+                            <option value="ikeja">Ikeja Campus</option>
+                            <option value="lekki">Lekki Campus</option>
+                            <option value="magodo">Magodo Campus</option>
+                            <option value="baruwa">Baruwa Campus</option>
+                            <option value="ipaja">Ipaja Campus</option>
+                            <option value="isolo">Isolo Campus</option>
+                            <option value="ajasa">Ajasa Campus</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Additional Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="prevSchool">Previous School</label>
+                        <input type="text" id="prevSchool" name="prevSchool" placeholder="Name of previous school (if any)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialNeeds">Special Needs/Medical Information</label>
+                        <textarea id="specialNeeds" name="specialNeeds" placeholder="Please inform us of any special needs or medical conditions" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                        <label for="termsAgree">I agree to the terms and conditions *</label>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="dataConsent" name="dataConsent">
+                        <label for="dataConsent">I consent to receive updates about Honeyland Schools</label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="register-submit-btn">Submit Registration</button>
+                    <button type="reset" class="register-reset-btn">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Information Cards -->
+    <section class="contact-info-section">
+        <div class="contact-container">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+234 902 982 0762</p>
+                    <p>+234 8000 000 000</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@honeylandschools.ng</p>
+                    <p>admissions@honeylandschools.ng</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Locations</h3>
+                    <p>Ikeja, Ajasa, Baruwa</p>
+                    <p>Lekki, Magodo, Ipaja, Isolo</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3>School Hours</h3>
+                    <p>Mon - Fri: 7:30 AM - 4:00 PM</p>
+                    <p>Sat - Sun: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="contact-container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Send us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+234 XXX XXX XXXX">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="admission">Admission Inquiry</option>
+                            <option value="facilities">Facilities Tour</option>
+                            <option value="scholarship">Scholarship Information</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="complaint">Feedback/Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Your message here..." rows="6"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I agree to the privacy policy and terms of service</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations-section">
+        <div class="contact-container">
+            <h2>Our School Branches</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3>Ikeja Campus</h3>
+                    <p>📍 24 Oduduwa Crescent, Ikeja, Lagos</p>
+                    <p>📞 +234 902 982 0762</p>
+                    <p class="description">Our flagship campus with primary and secondary education facilities.</p>
+                </div>
+
+                <div class="location-card">
+                    <h3>Lekki Campus</h3>
+                    <p>📍 Plot 3, Orchid Road, Lekki Phase 1, Lagos</p>
+                    <p>📞 +234 902 982 0762</p>
+                    <p class="description">Modern facilities with emphasis on STEM and technology.</p>
+                </div>
+
+                <div class="location-card">
+                    <h3>Magodo Campus</h3>
+                    <p>📍 Off Cmd Road, Magodo, Lagos</p>
+                    <p>📞 +234 902 982 0762</p>
+                    <p class="description">Boarding facilities available with comprehensive programs.</p>
+                </div>
+
+                <div class="location-card">
+                    <h3>Baruwa Campus</h3>
+                    <p>📍 Lagos-Ibadan Expressway, Baruwa, Lagos</p>
+                    <p>📞 +234 902 982 0762</p>
+                    <p class="description">Spacious campus with extensive sports and recreational facilities.</p>
+                </div>
+
+                <div class="location-card">
+                    <h3>Ipaja Campus</h3>
+                    <p>📍 Off Ijaiye Road, Ipaja, Lagos</p>
+                    <p>📞 +234 902 982 0762</p>
+                    <p class="description">Preschool and primary education with nurturing environment.</p>
+                </div>
+
+                <div class="location-card">
+                    <h3>Isolo Campus</h3>
+                    <p>📍 Ijesha Road, Isolo, Lagos</p>
+                    <p>📞 +234 902 982 0762</p>
+                    <p class="description">Community-focused school with strong parental involvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="contact-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How do I apply for admission?</h4>
+                    <p>You can apply online through our website or visit any of our campuses with the required documents. Contact our admissions office for the complete list of requirements.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Do you offer scholarships?</h4>
+                    <p>Yes, we offer merit-based and need-based scholarships. Please contact our admissions office to learn more about available opportunities.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What is your curriculum?</h4>
+                    <p>We offer both Nigerian and British curricula, preparing students for IGCSE, Checkpoint, and Cambridge A & O Levels.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Are boarding facilities available?</h4>
+                    <p>Yes, we have boarding facilities at select campuses. Please contact us to confirm availability and booking details.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What extracurricular activities are offered?</h4>
+                    <p>We offer sports, music, arts, debate, coding, entrepreneurship programs, and many other activities to develop well-rounded students.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>When can I visit the school?</h4>
+                    <p>We welcome campus visits! Please schedule an appointment with our admissions office at least 2 days in advance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <script>
+        // Registration Modal Functionality
+        const registerModal = document.getElementById('registerModal');
+        const openRegisterBtn = document.getElementById('openRegisterBtn');
+        const closeRegisterBtn = document.getElementById('closeRegisterBtn');
+
+        if (openRegisterBtn) {
+            openRegisterBtn.addEventListener('click', function() {
+                registerModal.style.display = 'block';
+            });
+        }
+
+        if (closeRegisterBtn) {
+            closeRegisterBtn.addEventListener('click', function() {
+                registerModal.style.display = 'none';
+            });
+        }
+
+        window.addEventListener('click', function(event) {
+            if (event.target === registerModal) {
+                registerModal.style.display = 'none';
+            }
+        });
+
+        // Form submission
+        const registerForm = document.getElementById('registerForm');
+        if (registerForm) {
+            registerForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Registration submitted successfully! We will contact you soon.');
+                registerModal.style.display = 'none';
+                registerForm.reset();
+            });
+        }
+
+        
+
+// Hamburger Menu Toggle
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Only attach handlers if elements exist
+if (hamburger && navMenu) {
+    // Toggle hamburger menu
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when a nav link is clicked
+    if (navLinks && navLinks.length) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Don't close if it's a dropdown toggle
+                if (!link.classList.contains('dropdown-toggle')) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+        const isClickInsideNav = navMenu.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+
+        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+}
+
+// Dropdown toggle functionality
+const dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    
+    if (toggle) {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Close other dropdowns
+            dropdowns.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+        });
+    }
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown')) {
+        dropdowns.forEach(d => d.classList.remove('active'));
+    }
+});
+
+// Close dropdown when a dropdown link is clicked
+const dropdownLinks = document.querySelectorAll('.dropdown-link');
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        dropdowns.forEach(d => d.classList.remove('active'));
+        // Close hamburger menu on mobile
+        if (hamburger && navMenu) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+});
+
+
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+   
+
+</body>
+</html>
